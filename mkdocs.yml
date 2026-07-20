@@ -1,5 +1,5 @@
-site_name: SDI Portal Manual
-site_description: User manual for the GET SDI Portal.
+site_name: GET SDI Portal Reference Manual
+site_description: GET SDI Portal v6.0.0 Manual
 
 theme:
   name: material
@@ -63,3 +63,5 @@ plugins:
 
 nav:
   - Home: index.md
+  - Services:
+    - Map viewer: services/map-viewer.md
