@@ -45,7 +45,7 @@ setup a Geoportal based on ISO/OGC Standards.
 
 ## Where to start
 
-If you are new, begin with the [Map](services/map.md) guide to
+If you are new, begin with the [Map viewer](services/map-viewer.md) guide to
 navigate through your first map.
 
 ## More information
