@@ -1,0 +1,6 @@
+{
+  "name": "SDI Portal Docs (MkDocs)",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install -r requirements.txt"
+}

@@ -1,0 +1,36 @@
+/* ===================================================================
+   GET SDI Portal brand — maps the app's palette onto Material's tokens.
+   Triggered by `primary: custom` / `accent: custom` in mkdocs.yml.
+   =================================================================== */
+
+/* Light mode (default scheme) */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #0f4f5f;  /* header / primary teal */
+  --md-primary-fg-color--light: #1a6b7f;
+  --md-primary-fg-color--dark:  #0a3a46;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent="custom"] {
+  /* Slightly deepened green so links/hovers stay legible on white
+     (the raw #86b65f is used in dark mode where it pops). */
+  --md-accent-fg-color: #6f9e4c;
+}
+
+/* Dark mode (slate scheme): lift the teal so it reads on dark surfaces,
+   and let the true brand green shine as the accent. */
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #12667f;
+  --md-primary-fg-color--light: #1a6b7f;
+  --md-primary-fg-color--dark:  #0f4f5f;
+}
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #86b65f;
+}
+
+/* A touch of brand on the section-heading rules, echoing the app. */
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: 0.2em;
+}
