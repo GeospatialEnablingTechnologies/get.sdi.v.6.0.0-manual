@@ -1,22 +1,12 @@
 site_name: SDI Portal Manual
 site_description: User manual for the GET SDI Portal.
 
-# IMPORTANT for a project page (served at <user>.github.io/<repo>/):
-# uncomment and set this so canonical URLs and search work correctly.
-# site_url: https://<your-user-or-org>.github.io/<repo>/
-
-# Optional: shows an "edit this page" pencil linking back to THIS docs repo.
-# repo_url: https://github.com/<your-user-or-org>/<repo>
-# edit_uri: edit/main/docs/
-
 theme:
   name: material
   language: en
   logo: assets/logo.png
   favicon: assets/favicon.ico
 
-  # Two palettes with a light/dark toggle. "custom" pulls the exact GET
-  # brand hex values from docs/stylesheets/extra.css.
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -38,26 +28,22 @@ theme:
     code: JetBrains Mono
 
   features:
-    - navigation.instant      # SPA-style fast page loads
-    - navigation.tracking     # URL updates as you scroll
-    - navigation.sections     # top-level nav as grouped sections
-    - navigation.top          # back-to-top button
-    - navigation.footer       # prev/next links at page bottom
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
-    - content.code.copy       # copy button on code blocks
+    - content.code.copy
     - content.code.annotate
-
-  # Drop your logo/favicon into docs/assets/ and uncomment:
-  # logo: assets/logo_sdi.png
-  # favicon: assets/favicon.png
 
 extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
-  - admonition                # note/warning/tip callout boxes
+  - admonition
   - attr_list
   - md_in_html
   - tables
@@ -75,7 +61,5 @@ markdown_extensions:
 plugins:
   - search
 
-# Explicit nav for a manual. Add pages here as the manual grows; anything
-# under docs/ not listed still builds but won't appear in the sidebar.
 nav:
   - Home: index.md
