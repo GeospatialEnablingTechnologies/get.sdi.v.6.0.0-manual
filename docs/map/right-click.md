@@ -16,7 +16,12 @@ The **List** visualization displays a map at the top of the modal, followed by s
 
 ### Collapse
 
-TBD
+The **Collapse** visualization displays a map at the top of the modal, followed by a collapsible table below it. The table rows are grouped by an attribute configured by the administrators — for example, grouped by district, category, or status.
+
+Each group appears as a collapsed row showing the grouping value. Click a group to expand it and reveal the rest of the attributes for the features within that group. Click again to collapse it.
+
+![Right Click Collapse Visualization](../assets/images/map-viewer/right-click-collapse.png)
+
 
 ## Actions
 
